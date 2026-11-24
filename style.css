@@ -258,3 +258,76 @@ kbd {
   outline: 2px solid var(--value);
   outline-offset: 2px;
 }
+
+/* ---- Menú de pausa ---- */
+.pause-title {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: var(--danger);
+}
+
+.pause-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.pause-section.hidden {
+  display: none;
+}
+
+.pause-box button {
+  min-width: 170px;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background 0.15s;
+}
+
+.pause-box button:hover {
+  background: var(--btn-bg-hover);
+}
+
+.pause-level {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.pause-level select {
+  background: var(--kbd-bg);
+  color: var(--text);
+  border: 1px solid var(--kbd-border);
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+
+.pause-hint {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.pause-keys {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--muted);
+  text-align: left;
+}
+#pause-menu:focus {
+  outline: none;
+}

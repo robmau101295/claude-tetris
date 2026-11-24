@@ -258,3 +258,33 @@ kbd {
   outline: 2px solid var(--value);
   outline-offset: 2px;
 }
+
+/* ---- Skins ---- */
+#skin-select {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#skin-select:focus-visible {
+  outline: 2px solid var(--value);
+  outline-offset: 2px;
+}
+
+body.skin-neon #board,
+body.skin-neon #next-canvas { background: #000; border-color: #1b1b3a; }
+body.skin-neon #board { box-shadow: 0 0 24px rgba(0, 240, 255, 0.25); }
+
+body.skin-pastel #board,
+body.skin-pastel #next-canvas { background: #fdf6f0; border-color: #e6d6cb; }
+
+body.skin-pixel #board,
+body.skin-pixel #next-canvas { background: #16161d; border-color: #33333f; }
+body.skin-pixel #board,
+body.skin-pixel #next-canvas { image-rendering: pixelated; }
+
